@@ -11,8 +11,8 @@ passwordSize=16
 
 password = ''.join(allCharacters[random.randint(0, len(allCharacters)-1)] for _ in range(passwordSize))
 
+# password = ''
 # for i in range(passwordSize):
-#   position = random.randint(0, len(allCharacters)-1)
-#   password += allCharacters[position]
+#   password += allCharacters[random.randint(0, len(allCharacters)-1)]
 
 print(password)
