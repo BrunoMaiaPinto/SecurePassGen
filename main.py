@@ -9,10 +9,10 @@ characters.append("!@#$%^&*()_+[]{}|;':,.<>?")
 allCharacters =''.join(characters)
 passwordSize=16
 
-password=''
+password = ''.join(allCharacters[random.randint(0, len(allCharacters)-1)] for _ in range(passwordSize))
 
-for i in range(passwordSize):
-  position = random.randint(0, len(allCharacters)-1)
-  password += allCharacters[position]
+# for i in range(passwordSize):
+#   position = random.randint(0, len(allCharacters)-1)
+#   password += allCharacters[position]
 
 print(password)
